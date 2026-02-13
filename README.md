@@ -4,7 +4,7 @@ An Android SDK for reading device contacts with Ethereum (ETH) address and ENS n
 
 ETH addresses are stored in the `DATA15` field of Android's `ContactsContract`, and ENS names are stored in `SharedPreferences` — the same convention used by the ethOS Contacts app.
 
-[![](https://jitpack.io/v/anthropics/contactssdk.svg)](https://jitpack.io/#anthropics/contactssdk)
+[![](https://jitpack.io/v/EthereumPhone/ContactsSDK.svg)](https://jitpack.io/#EthereumPhone/ContactsSDK)
 
 ## Setup
 
@@ -27,7 +27,7 @@ In your module `build.gradle.kts`:
 
 ```kotlin
 dependencies {
-    implementation("com.github.YourUsername:ContactsSdk:1.0.0")
+    implementation("com.github.EthereumPhone:ContactsSDK:0.1.0")
 }
 ```
 
@@ -145,12 +145,11 @@ This SDK uses the same storage convention as the ethOS Contacts app:
 
 If `DATA15` contains a valid ETH address (`0x` + 40 hex chars), it's parsed as an ETH address. Otherwise, if it contains a dot (e.g., `vitalik.eth`), it's treated as an ENS name.
 
-## Publishing to JitPack
+## JitPack
 
-1. Push this repo to GitHub
-2. Create a release tag (e.g., `1.0.0`)
-3. Visit `https://jitpack.io/#YourUsername/ContactsSdk` to trigger the build
-4. Users can then add the dependency as shown above
+This library is published via [JitPack](https://jitpack.io/#EthereumPhone/ContactsSDK).
+
+To trigger a new build after a release, visit: https://jitpack.io/#EthereumPhone/ContactsSDK
 
 ## License
 
